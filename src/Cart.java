@@ -6,7 +6,7 @@ public class Cart implements Countable{
         return count;
     }
 
-    public void add(Box item){
+    public void add(Box<? extends Countable> item){
         count += item.getCount();
     }
 }
